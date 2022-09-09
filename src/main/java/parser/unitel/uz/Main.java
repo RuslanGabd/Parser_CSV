@@ -76,24 +76,15 @@ public class Main {
             System.out.println(n);
             System.out.println(columnList.size());
             Unitel Unitel = new Unitel();
-            if (columnList.size() > -1) {
-                Unitel.internalName = columnList.get(0);
-                if (columnList.size() > 1) {
-                    Unitel.uidPerson = columnList.get(1);
-                    Unitel.system = columnList.get(2);
-                    Unitel.login = columnList.get(3);
-                    Unitel.accountDisabled = columnList.get(4);
-                    if (columnList.size() > 7) {
-                        Unitel.accessType = columnList.get(5);
-
-                        Unitel.description = columnList.get(6);
-
-                        Unitel.jobTitle = columnList.get(7);
-
-                        Unitel.fullPath = columnList.get(8);
-                    }
-                }
-            }
+            Unitel.internalName = columnList.get(0);
+            Unitel.uidPerson = columnList.get(1);
+            Unitel.system = columnList.get(2);
+            Unitel.login = columnList.get(3);
+            Unitel.accountDisabled = columnList.get(4);
+            Unitel.accessType = columnList.get(5);
+            Unitel.description = columnList.get(6);
+            Unitel.jobTitle = columnList.get(7);
+            Unitel.fullPath = columnList.get(8);
             Unitels.add(Unitel);
         }
         return Unitels;
